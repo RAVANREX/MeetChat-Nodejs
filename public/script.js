@@ -50,9 +50,11 @@ socket.on('user-disconnected', userId => {
 
 
 function myFunction(){
-  alert("Leave");
+  var homepageurl = browser == 'gc' ? 'https://www.google.com/_/chrome/newtab' : browser == 'op' ? 'about:speeddial' : browser=='sa' ? 'http://livepage.apple.com' : 'about:home'
 
-  window.location.href = "https://github.com/RAVANREX/zoom-copy-try/edit/main/public/script.js";
+  alert(homepageurl);
+
+  window.location.href = homepageurl;
 
 
 }

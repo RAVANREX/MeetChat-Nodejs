@@ -45,6 +45,21 @@ socket.on('user-disconnected', userId => {
   if (peers[userId]) peers[userId].close()
 })
 
+
+
+
+
+function myFunction(){
+  alert("Leave");
+  window.history.back();
+}
+
+function myFunction2(){
+  alert("Share this link with your friend \n \n"+window.location.href);
+  
+}
+
+
 myPeer.on('open', id => {
   socket.emit('join-room', ROOM_ID, id)
 })

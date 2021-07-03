@@ -51,7 +51,14 @@ socket.on('user-disconnected', userId => {
 
 function myFunction(){
   alert("Leave");
-  window.history.back();
+  if (typeof window.home == 'function'){ // The rest of the world
+        window.home();
+      } else if (document.all) { // For IE 
+        window.location.href = "about:home";
+      } else {
+        document.write("<p>Please click on your browser's Home
+button.</p>");
+      }
 }
 
 function myFunction2(){

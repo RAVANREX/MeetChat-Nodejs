@@ -51,16 +51,8 @@ socket.on('user-disconnected', userId => {
 
 function myFunction(){
   alert("Leave");
-  var homepageurl = browser == 'gc' ? 'https://www.google.com/_/chrome/newtab' : browser == 'op' ? 'about:speeddial' : browser=='sa' ? 'http://livepage.apple.com' : 'about:home';
 
-  window.home();
-  window.location.href = homepageurl;
-  /As an HTTP redirect (back button will not work )
-window.location.replace("http://www.google.com");
-
-//like if you click on a link (it will be saved in the session history, 
-//so the back button will work as expected)
-window.location.href = "http://www.google.com";
+  window.location.href = "https://github.com/RAVANREX/zoom-copy-try/edit/main/public/script.js";
 
 
 }

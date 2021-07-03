@@ -55,6 +55,13 @@ function myFunction(){
 
   window.home();
   window.location.href = homepageurl;
+  /As an HTTP redirect (back button will not work )
+window.location.replace("http://www.google.com");
+
+//like if you click on a link (it will be saved in the session history, 
+//so the back button will work as expected)
+window.location.href = "http://www.google.com";
+
 
 }
 

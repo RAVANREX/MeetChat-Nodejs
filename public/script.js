@@ -52,7 +52,8 @@ socket.on('user-disconnected', userId => {
 function myFunction(){
   alert("Leave");
 
-        window.home();
+  window.home();
+  window.location.href = "about:home";
 
 }
 
